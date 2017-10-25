@@ -42,7 +42,7 @@ class medico: public Profesional{
       cin>>certificado>>graduado>>codigo_medico;//entrada de datos
     }
 };
-class medicoIngeniero: public virtual Ingeniero,public medico{
+class medicoIngeniero: public Ingeniero,public medico{
   public:
     medicoIngeniero(string mycertificado, int mygraduado, string mycodigo_medico, string mycodigo_ingeniero)//constructor
       :Ingeniero(mycertificado,mygraduado,mycodigo_ingeniero),medico(mycertificado,mygraduado,mycodigo_medico){}
